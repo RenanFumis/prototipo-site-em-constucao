@@ -29,3 +29,8 @@ function initCarousel() {
 }
 
 document.addEventListener('DOMContentLoaded', initCarousel);
+document.addEventListener('touchstart', function(event) {
+  if (event.target.tagName === 'IMG') {
+    event.preventDefault();
+  }
+});
