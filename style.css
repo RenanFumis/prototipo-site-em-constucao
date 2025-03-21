@@ -122,3 +122,9 @@ p {
     pointer-events: none;
   }
 }
+
+@media (orientation: landscape) {
+  body {
+    overflow-y: auto; /* Permite rolagem vertical */
+  }
+}
