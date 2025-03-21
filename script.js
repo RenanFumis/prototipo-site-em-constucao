@@ -25,7 +25,7 @@ function initCarousel() {
     backgroundDiv.appendChild(img);
   });
 
-  setInterval(changeBackground, 10000);  // Troca a imagem a cada 10 segundos
+  setInterval(changeBackground, 6000);  // Troca a imagem a cada 6 segundos
 }
 
 document.addEventListener('DOMContentLoaded', initCarousel);
