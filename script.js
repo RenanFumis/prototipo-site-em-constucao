@@ -1,7 +1,7 @@
 const images = [
-  'image/blurred-imagem-drive-wingpg22.jpg',
+  'image/blurred-imagem-drive-croma-collection-png65.png',
   'image/blurred-image-simtronic-pg62.png',
-  'image/blurred-image-wing-pg31.png'
+  'image/blurred-imgem-drive-advanced-catalogue.png'
 ];
 
 let currentImageIndex = 0;
