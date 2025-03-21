@@ -73,10 +73,10 @@ p {
 }
 @media (max-width: 800px) {
   h1 {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   p {
-    font-size: 1em;
+    font-size: .85em;
   }
   .icone img {
     width: 30px;
@@ -123,8 +123,3 @@ p {
   }
 }
 
-@media (orientation: landscape) {
-  body {
-    overflow-y: auto; /* Permite rolagem vertical */
-  }
-}
