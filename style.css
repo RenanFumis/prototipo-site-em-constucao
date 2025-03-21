@@ -4,7 +4,7 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #f0f0f0;
   overflow: hidden;
 }
@@ -12,27 +12,28 @@ body {
 .container {
   text-align: center;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.45);
   border-radius: 10px;
-  max-width: 90%;
+  max-width: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 2;
 }
 
 h1 {
-  font-size: 2.5em;
-  color: #222;
-  margin: 0.5em 0;
-  letter-spacing: .02em;
+  font-size: 2.25rem;
+  color: #000;
+  margin: .5rem;
+  margin-bottom: 2rem;
+  letter-spacing: .02rem;
 }
 
 p {
-  font-size: 1.25em;
-  color: #333;
-  margin: 0.5em 0;
-  letter-spacing: .05em;
-  line-height: .75em;
+  font-size: 1.25rem;
+  color: #222;
+  margin: 0.5rem 0;
+  letter-spacing: .05rem;
+  line-height: 1.5rem;
 }
 
 .icone {
@@ -68,12 +69,12 @@ p {
 /* Responsividade */
 @media (max-width: 950px) {
   h1 {
-    font-size: 1.2em;
+    font-size: 1.8rem;
   }
   p {
-    font-size: .75em;
-    line-height: 1.1em;
-    letter-spacing: .05em;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    letter-spacing: .05rem;
     color: #222;
   }
   .icone img {
@@ -85,12 +86,12 @@ p {
 }
 @media (max-width: 850px) {
   h1 {
-    font-size: 1.1em;
+    font-size: 1.8rem;
   }
   p {
-    font-size: .70em;
-    line-height: 1.1em;
-    letter-spacing: .05em;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    letter-spacing: .05rem;
   }
   .non-interactive {
     pointer-events: none;
@@ -99,14 +100,18 @@ p {
 }
 
 @media (max-width: 600px) {
+
+  .container {
+    max-width: 80%;
+  }
   h1 {
-    font-size: 1.2em;
-    color: #111;
+    font-size: 1.5rem;
+    color: #000;
   }
   p {
-    font-size: 0.75em;
-    line-height: 1.1em;
-    letter-spacing: .05em;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    letter-spacing: .05rem;
     color: #222;
   }
   .icone img {
