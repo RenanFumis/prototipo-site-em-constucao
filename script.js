@@ -21,6 +21,7 @@ function initCarousel() {
   images.forEach((src, index) => {
     const img = document.createElement('img');
     img.src = src;
+    img.classList.add('non-interactive');  // Adiciona a classe para desabilitar a interação
     if (index === 0) img.classList.add('active');  // Inicia com a primeira imagem visível
     backgroundDiv.appendChild(img);
   });
@@ -30,7 +31,7 @@ function initCarousel() {
 
 document.addEventListener('DOMContentLoaded', initCarousel);
 document.addEventListener('touchstart', function(event) {
-  if (event.target.tagName === 'IMG') {
+  if (event.target.tagName === 'png') {
     event.preventDefault();
   }
 });

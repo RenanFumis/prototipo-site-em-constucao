@@ -73,6 +73,9 @@ p {
   .icone img {
     width: 30px;
   }
+  .non-interactive {
+    pointer-events: none;
+  }
 }
 
 @media (max-width: 600px) {
@@ -88,6 +91,9 @@ p {
   .container {
     padding: 10px;
   }
+  .non-interactive {
+    pointer-events: none;
+  }
 }
 
 @media (max-width: 400px) {
@@ -99,5 +105,8 @@ p {
   }
   .icone img {
     width: 25px;
+  }
+  .non-interactive {
+    pointer-events: none;
   }
 }
