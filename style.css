@@ -67,11 +67,6 @@ p {
 
 /* Responsividade */
 @media (max-width: 950px) {
-  p {
-    line-height: 1em;
-  }
-}
-@media (max-width: 850px) {
   h1 {
     font-size: 1.2em;
   }
@@ -82,6 +77,19 @@ p {
   }
   .icone img {
     width: 30px;
+  }
+  .non-interactive {
+    pointer-events: none;
+  }
+}
+@media (max-width: 850px) {
+  h1 {
+    font-size: 1.1em;
+  }
+  p {
+    font-size: .70em;
+    line-height: 1.1em;
+    letter-spacing: .05em;
   }
   .non-interactive {
     pointer-events: none;
