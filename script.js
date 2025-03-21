@@ -14,19 +14,19 @@ function changeBackground() {
   backgroundImages[currentImageIndex].classList.add('active');
 }
 
-// Inicializa o carrossel
+//Inicializa o carrossel
 function initCarousel() {
   const backgroundDiv = document.querySelector('.background');
 
   images.forEach((src, index) => {
     const img = document.createElement('img');
     img.src = src;
-    img.classList.add('non-interactive');  // Adiciona a classe para desabilitar a interação
-    if (index === 0) img.classList.add('active');  // Inicia com a primeira imagem visível
+    img.classList.add('non-interactive');  //Adiciona a classe para desabilitar a interação
+    if (index === 0) img.classList.add('active');  //Inicia com a primeira imagem visível
     backgroundDiv.appendChild(img);
   });
 
-  setInterval(changeBackground, 6000);  // Troca a imagem a cada 6 segundos
+  setInterval(changeBackground, 6000);  //Troca a imagem a cada 6 segundos
 }
 
 document.addEventListener('DOMContentLoaded', initCarousel);
