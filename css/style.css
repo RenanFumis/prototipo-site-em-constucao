@@ -1,3 +1,6 @@
+@import "./design_token.css";
+/* @import "./responsivo.css"; */
+
 body {
   display: flex;
   justify-content: center;
@@ -6,31 +9,28 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   background-color: #f0f0f0;
-  /* overflow: hidden; */
 }
 
 .container {
   text-align: center;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.45);
+  background: var(--bg-cor);
   border-radius: 10px;
   max-width: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--box-shadow);
   position: relative;
   z-index: 2;
 }
 
 h1 {
-  font-size: 2.25rem;
-  color: #000;
+  font-size: var(--fs-xxl);
   margin: .5rem;
   margin-bottom: 2rem;
   letter-spacing: .02rem;
 }
 
 p {
-  font-size: 1.25rem;
-  color: #222;
+  font-size: var(--fs-md);
   margin: 0.5rem 0;
   letter-spacing: .05rem;
   line-height: 1.5rem;
@@ -69,13 +69,12 @@ p {
 /* Responsividade */
 @media (max-width: 950px) {
   h1 {
-    font-size: 1.8rem;
+    font-size: var(--fs-xl);
   }
   p {
-    font-size: 1.25rem;
+    font-size: var(--fs-md);
     line-height: 1.5rem;
     letter-spacing: .05rem;
-    color: #222;
   }
   .icone img {
     width: 30px;
@@ -97,10 +96,10 @@ p {
   }
 
   h1 {
-    font-size: 1.8rem;
+    font-size: var(--fs-lg);
   }
   p {
-    font-size: 1.2rem;
+    font-size: var(--fs-sm);
     line-height: 1.5rem;
     letter-spacing: .05rem;
   }
@@ -116,14 +115,12 @@ p {
     max-width: 80%;
   }
   h1 {
-    font-size: 1.5rem;
-    color: #000;
+    font-size: var(--fs-md);
   }
   p {
-    font-size: 1rem;
+    font-size: var(--fs-xs);
     line-height: 1.3rem;
     letter-spacing: .05rem;
-    color: #222;
   }
   .icone img {
     width: 25px;
@@ -139,10 +136,10 @@ p {
 
 @media (max-width: 400px) {
   h1 {
-    font-size: 1.30em;
+    font-size: var(--fs-sm);
   }
   p {
-    font-size: 0.95em;
+    font-size: var(--fs-xxs);
   }
   .icone img {
     width: 25px;
